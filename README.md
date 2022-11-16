@@ -50,7 +50,7 @@ for batch in train_loader:
     x = torch.cat([x, mixup_x], dim=0)
     
     logits, embeddings = model(x)
-    loss = self.loss(F.cross_entropy, logits, targets_a,targets_b, lam)
+    loss = regmixup_criterion(F.cross_entropy, logits, targets_a,targets_b, lam)
     ...
 ```
 # Setup
