@@ -7,7 +7,6 @@ from data.cifar_c_datamodule import CIFAR_C_DataModule
 from data.ood_datamodule import OODDataModule
 from data.cifar import CIFARDataModule, Cifar10v6TestDataset, Cifar10_2TestDataset
 from data.svhn import SVHNDataModule
-from data.tiny_imagenet import TinyImageNetDataModule
 import torchvision
 
 def simple_test(trainer, model, dm):
